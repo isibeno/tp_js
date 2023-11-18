@@ -1,0 +1,42 @@
+<!DOCTYPE - html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    </head>
+    <body>
+        <body>
+            <div class="A">
+                <div class="contenu">
+                    <p>
+                        <button class="increment" onclick="increment()">+</button>
+                        <span id="counter">0</span>
+                        <button class="decrement" onclick="decrement()">-</button>             
+                    </p>
+                </div>
+                <button class="reset" onclick="resetCounter()">Reset</button> 
+            </div>
+    
+            <script>
+              let counterValue = 0;
+          
+           function increment() {
+             counterValue++;
+             document.getElementById("counter").innerHTML = counterValue;
+          }
+          
+           function decrement() {
+            counterValue--;
+            document.getElementById("counter").innerHTML = counterValue;
+          }
+           
+           function resetCounter() {
+            counterValue = 0;
+            document.getElementById("counter").innerHTML = counterValue;
+          }
+            </script>
+          </body>
+    </body>
+</html>
